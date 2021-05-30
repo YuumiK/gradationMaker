@@ -35,6 +35,9 @@ function drawBackground() {
         c[i] = color(random(360), random(30, 60), random(150, 220), 255);
     drawGradation(-width, -height, 2*width, 2*height, c);
 }
+function mousePressed() {
+    drawBackground();
+}
 
 function keyPressed(){
 switch(keyCode)
