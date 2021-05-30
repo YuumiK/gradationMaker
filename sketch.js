@@ -36,7 +36,8 @@ function drawBackground() {
     drawGradation(-width, -height, 2*width, 2*height, c);
 }
 function mousePressed() {
-    drawBackground();
+    if(-width < mouseX && mouseX < 2*width && -height < mouseY && mouseY < 2*height)
+        drawBackground();
 }
 
 function keyPressed(){
