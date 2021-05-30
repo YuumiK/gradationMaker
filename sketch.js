@@ -1,6 +1,6 @@
 function setup(){
     colorMode(HSB, 360, 100, 100, 255);
-    createCanvas(windowWidth, windowHeight, WEBGL);
+    createCanvas(displayWidth, displayHeight, WEBGL);
     button = createButton("Save");
     button.mousePressed(saveImage);
     drawBackground();
